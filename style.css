@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+}
+
+.card {
+    background-color: peru;
+    width: 15em;
+}
+
+.hitpoints {
+    font-size: 1.5rem;
+}
+
+.hitpoints__current {
+    font-weight: 700;
+}
+
+.stats {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.stats__stat__name {
+    font-weight: 400;
+    text-align: center;
+    width: 100px;
+}
+
+.stats__stat__value {
+    font-weight: 700;
+    text-align: center;
+}
