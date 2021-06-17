@@ -12,32 +12,51 @@
     <div class="card">
 
 <h1 id="name">test</h1>
-<img src="" alt="" id="avatar" width="150">
+<img src="" alt="" id="avatar" width="100">
 
 <div class="hitpoints">
-    HP: <span id="hitpoints__current" class="hitpoints__current"></span> / <span id="hitpoints__max" class="hitpoints__max"></span>
+    <p>HP: <span id="hitpoints__current" class="hitpoints__current"></span> / <span id="hitpoints__max" class="hitpoints__max"></span></p>
+    <p>TEMP: <span id="hitpoints__temp" class="hitpoints__temp"></span></p>
 </div>
 
+<div class="size">
+    Size: <span id="sizeId"></span>
+</div>
+
+<div class="armorclass">
+    armorclass: <span id="armorclass"></span>
+</div>
+
+<div class="currencies">
+
+cp: <span id="currencies__cp"></span>
+sp: <span id="currencies__sp"></span>
+gp: <span id="currencies__gp"></span>
+pp: <span id="currencies__pp"></span>
+
+</div>
+
+<div class="speed">
+    <h2 class="speed__header">Speed</h2>
+    <div>Walking<br><span id="walk"></span> (<span id="walk_hokjes"></span>)</div>
+    <div style="display: none">Flying<br><span id="fly"></span> (<span id="fly_hokjes"></span>)</div>
+</div>
 
 <div>baseRaceName: <span id="baseRaceName"></span></div>
-<div>classes__definition__name: <span id="classes0__definition__name"></span><span id="classes0__level"></span></div>
-<div>classes__definition__name: <span id="classes1__definition__name"></span><span id="classes1__level"></span></div>
+<div><span id="classes0__definition__name"></span> <span id="classes0__level"></span></div>
+<div><span id="classes1__definition__name"></span> <span id="classes1__level"></span></div>
 
 
-<div>Speed Walking: <span id="walk"></span></div>
-<div>baseHitPoints: <span id="baseHitPoints"></span></div>
-<div>removedHitPoints: <span id="removedHitPoints"></span></div>
-<div>temporaryHitPoints: <span id="temporaryHitPoints"></span></div>
 
 
 
 <div class="stats">
-    <div class="stats__stat__name">Str<br><span class="stats__stat__value" id="strength"></span></div>
-    <div class="stats__stat__name">Dex<br><span class="stats__stat__value" id="dexterity"></span></div>
-    <div class="stats__stat__name">Con<br><span class="stats__stat__value" id="constitution"></span></div>
-    <div class="stats__stat__name">Int<br><span class="stats__stat__value" id="intelligence"></span></div>
-    <div class="stats__stat__name">Wis<br><span class="stats__stat__value" id="wisdom"></span></div>
-    <div class="stats__stat__name">Cha<br><span class="stats__stat__value" id="charisma"></span></div>
+    <div class="stats__stat__name">Str<br><span class="stats__stat__value" id="strength"></span> (<span class="stats__stat__value--modifier" id="strength--modifier"></span>)</div>
+    <div class="stats__stat__name">Dex<br><span class="stats__stat__value" id="dexterity"></span> (<span class="stats__stat__value--modifier" id="dexterity--modifier"></span>)</div>
+    <div class="stats__stat__name">Con<br><span class="stats__stat__value" id="constitution"></span> (<span class="stats__stat__value--modifier" id="constitution--modifier"></span>)</div>
+    <div class="stats__stat__name">Int<br><span class="stats__stat__value" id="intelligence"></span> (<span class="stats__stat__value--modifier" id="intelligence--modifier"></span>)</div>
+    <div class="stats__stat__name">Wis<br><span class="stats__stat__value" id="wisdom"></span> (<span class="stats__stat__value--modifier" id="wisdom--modifier"></span>)</div>
+    <div class="stats__stat__name">Cha<br><span class="stats__stat__value" id="charisma"></span> (<span class="stats__stat__value--modifier" id="charisma--modifier"></span>)</div>
 </div>
 
 

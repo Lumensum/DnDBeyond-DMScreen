@@ -5,33 +5,76 @@ box-sizing: border-box;
 margin: 0;
 }
 
+body {
+    background-color: #CECECE;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
-    background-color: peru;
+    background-color: white;
     width: 15em;
+    border: 2px solid #e5623e;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#name {
+    align-self: center;
+}
+
+.card img{
+    border: 1px silver solid;
+    box-shadow: 0rem 0rem 0.5rem 0rem #e5623e;
+    align-self: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.5rem;
 }
 
 .hitpoints {
     font-size: 1.5rem;
+    background-color: peru;
+    text-align: center;
 }
 
 .hitpoints__current {
     font-weight: 700;
 }
 
+.speed {
+    background-color: greenyellow;
+}
+
 .stats {
-    background-color: red;
+    background-color: #CECECE;
+    border: 1px gray solid;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
+}
+
+.stats__stat {
+    border: 1px red solid;
 }
 
 .stats__stat__name {
     font-weight: 400;
     text-align: center;
-    width: 100px;
 }
 
 .stats__stat__value {
     font-weight: 700;
     text-align: center;
+}
+
+.stats__stat__value--modifier {
+    font-weight: 400;
 }
