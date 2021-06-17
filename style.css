@@ -1,80 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 *,
 *::before,
 *::after {
-box-sizing: border-box;
-margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #CECECE;
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #cecece;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dmscreen {
+  background-color: #ff0000;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    background-color: white;
-    width: 15em;
-    border: 2px solid #e5623e;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: white;
+  width: 15em;
+  height: 50rem;
+  border: 2px solid #e5623e;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#name {
-    align-self: center;
+.card__header {
+  text-align: center;
+  font-weight: 700;
 }
 
-.card img{
-    border: 1px silver solid;
-    box-shadow: 0rem 0rem 0.5rem 0rem #e5623e;
-    align-self: center;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin: 0.5rem;
+.card img {
+  border: 1px silver solid;
+  box-shadow: 0rem 0rem 0.5rem 0rem #e5623e;
+  align-self: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
 }
 
 .hitpoints {
-    font-size: 1.5rem;
-    background-color: peru;
-    text-align: center;
+  font-size: 1.5rem;
+  background-color: peru;
+  text-align: center;
 }
 
 .hitpoints__current {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .speed {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 .stats {
-    background-color: #CECECE;
-    border: 1px gray solid;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  background-color: #cecece;
+  border: 1px gray solid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .stats__stat {
-    border: 1px red solid;
+  border: 1px red solid;
 }
 
 .stats__stat__name {
-    font-weight: 400;
-    text-align: center;
+  font-weight: 400;
+  text-align: center;
 }
 
 .stats__stat__value {
-    font-weight: 700;
-    text-align: center;
+  font-weight: 700;
+  text-align: center;
 }
 
 .stats__stat__value--modifier {
-    font-weight: 400;
+  font-weight: 400;
+}
+
+.currencies {
+  text-align: center;
+}
+
+.armorclass {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
